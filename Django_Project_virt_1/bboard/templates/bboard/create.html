@@ -6,10 +6,12 @@
     </head>
     <body>
  	    <h1>Добавление объявления</h1>
+        <a href="{% url 'add' %}">Добавить</a>
         <div>
             <a href="{% url 'index' %}">Главная</a>
             {% for rubric in rubrics %}
             <a href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</a>
+
             {% endfor %}
         </div>
 		<form method="post">
