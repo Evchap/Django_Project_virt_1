@@ -11,5 +11,5 @@ class BbAdmin(admin.ModelAdmin): # стр. 51
 
 
 admin.site.register(Bb, BbAdmin)
-
 # admin.site.register(Bb)
+admin.site.register(Rubric) # 55
